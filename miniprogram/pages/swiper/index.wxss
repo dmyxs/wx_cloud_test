@@ -1,0 +1,183 @@
+/* 自定义顶部导航栏 */
+.nav{
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #fff;
+}
+
+.title-text{
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  font-size: 34rpx;
+}
+
+.title-icon {
+  position: absolute;
+  bottom: 10rpx;
+  left: 10rpx;
+  border-radius: 70rpx;
+  box-sizing: border-box;
+  border: 1rpx solid #eaeaea;
+  display: flex;
+  z-index: 20;
+  align-items: center;
+}
+
+.title-icon image{
+  display: inline-block;
+  overflow: hidden;
+  width: 32rpx;
+  height: 36rpx;
+  padding: 16rpx 32rpx;
+  text-align: center;
+}
+
+.title-icon view {
+  height: 50rpx;
+  border-left: 1px solid #eaeaea;
+}
+
+
+
+/* 统一container */
+.container{
+  width: 100%;
+  height: 400rpx;
+  /* background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1604846631363&di=e56c391ce5e5fb8ed5deb0c605551838&imgtype=0&src=http%3A%2F%2Fa2.att.hudong.com%2F86%2F10%2F01300000184180121920108394217.jpg') center/cover; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10rpx;
+  margin-top: 50rpx;
+  background-color: #ddd;
+}
+
+/* 轮播图1的样式 */
+.swiper-container{
+  width: 90%;
+  height: 300rpx;
+  /* background-color: red; */
+  border-radius: 25rpx;
+  overflow: hidden;
+  position: relative;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.img{
+  width: 100%;
+  height: 100%;
+}
+
+.dots{
+  position: absolute;
+  right: 40rpx;
+  bottom: 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dots-2{
+  position: absolute;
+  right: 40rpx;
+  bottom: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dots-3{
+  position: absolute;
+  right: 40rpx;
+  bottom: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot{
+  margin: 0 10rpx;
+  width: 28rpx;
+  height: 28rpx;
+  background: #fff;
+  border-radius: 50%;
+  transition: all 0.6s;
+  font-size: 18rpx;
+  line-height: 28rpx;
+  text-align: center;
+}
+
+.dot-2{
+  margin: 0 10rpx;
+  width: 28rpx;
+  height: 8rpx;
+  background: #fff;
+  border-radius: 4rpx;
+  transition: all 1s;
+}
+
+.dot-3{
+  margin: 0 5rpx;
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 50%;
+  background: #fff;
+  transition: all 0.3s;
+}
+
+.active{
+  background-color: #f80;
+  color: #fff;
+}
+
+.active-2{
+  background-color: #f80;
+  width: 24rpx;
+  border-radius: 5rpx;
+  color: #fff;
+
+}
+
+
+
+/* 轮播图2的样式 */
+.swiper-container2{
+  width: 100%;
+  height: 300rpx;
+  /* background-color: red; */
+}
+
+.swiper2{
+  width: 100%;
+  height: 100%;
+}
+
+.img2{
+  width: 100%;
+  height: 100%;
+  border-radius: 20rpx;
+}
+
+.img-in {
+  transform:scale(1);
+  transition: all 0.3s ease-in;
+}
+
+.img-out{
+  transform:scale(0.8);
+  transition: all 0.3s ease-out;
+}

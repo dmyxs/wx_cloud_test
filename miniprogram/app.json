@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/books/index",
+    "pages/payment/index",
+    "pages/movable/index",
+    "pages/swiper/index",
+    "pages/scroll/index",
+    "pages/request/index",
+    "pages/camera/index",
+    "pages/music/index",
+    "pages/map/index",
+    "pages/me/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "测试",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "请确认位置授权，该位置将用于地图展示"
+    }
+  },
+  "requiredBackgroundModes": ["audio", "location"]
+}

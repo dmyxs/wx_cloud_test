@@ -1,0 +1,60 @@
+<!-- <view class="nav" style="height:{{navH}}px">
+  <view class="title-icon">
+    <image src="../../image/time.png" mode="aspectFit" />
+    <view></view>
+    <image src="../../image/time_active.png" mode="aspectFit" />
+  </view>
+  <view class="title-text">首页</view>
+</view> -->
+
+
+<!-- 轮播图1的布局 -->
+<view class="container">
+  <view class="swiper-container" >
+    <swiper class="swiper" autoplay="auto" interval="3000" duration="500" current="{{swiperCurrentIndex}}" bindchange="onSweiperChange">
+      <block wx:for="{{swiper}}" wx:key="index">
+        <swiper-item>
+          <image class="img" src="{{item.imgUrl}}" mode="scaleToFill" />
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="dots">
+      <block wx:for="{{swiper}}" wx:key="index">
+        <view class="dot {{index === swiperCurrentIndex ? 'active' : ''}}" bindtap="onChangeDot" id="{{index}}">{{index + 1}}</view>
+      </block>
+    </view>
+    <view class="dots-2">
+      <block wx:for="{{swiper}}" wx:key="index">
+        <view class="dot-2 {{index === swiperCurrentIndex ? 'active' : ''}}" bindtap="onChangeDot" id="{{index}}"></view>
+      </block>
+    </view>
+    <view class="dots-3">
+      <block wx:for="{{swiper}}" wx:key="index">
+        <view class="dot-3 {{index === swiperCurrentIndex ? 'active-2' : ''}}" bindtap="onChangeDot" id="{{index}}"></view>
+      </block>
+    </view>
+  </view>
+</view>
+
+
+<!-- 轮播图2的布局 -->
+<view class="container">
+  <view class="swiper-container2">
+    <swiper class="swiper2" autoplay="auto" 
+      indicator-dots="true"
+      indicator-dots-active="red"
+      interval="3000" 
+      duration="500" 
+      current="{{swiperCurrentIndex}}" 
+      previous-margin="100rpx"
+      next-margin="100rpx"
+      circular="ture"
+      bindchange="onSweiperChange">
+      <block wx:for="{{swiper}}" wx:key="index">
+        <swiper-item>
+            <image class="img2 {{swiperCurrentIndex === index ? 'img-in' : 'img-out'}}" src="{{item.imgUrl}}" mode="scaleToFill" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</view>

@@ -1,0 +1,16 @@
+.scroll-container{
+  margin-top: 200rpx;
+  display: flex;
+}
+
+.scroll{
+  display: flex;
+}
+
+.banner-item{
+  width: 300rpx;
+  height: 300rpx;
+  background-color: red;
+  margin-right: 10rpx;
+  flex-shrink: 0;
+}

@@ -1,0 +1,51 @@
+page {
+  background: #ccc;
+}
+
+/* 列表布局 */
+.movable-area {
+  width: 100%;
+  height: 200rpx;
+  margin: 20rpx 0;
+}
+
+.movable-view {
+  width: 100%;
+  height: 100%;
+}
+
+.touch-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.content {
+  width: 100%;
+  /* margin-right: 0; */
+  box-sizing: border-box;
+  transition: all 0.4s;
+  transform: translateX(180rpx);
+  margin-left: -180rpx;
+  overflow: hidden;
+  background-color: pink;
+
+}
+
+.del {
+  width: 180rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: red;
+  transform: translateX(180rpx);
+  transition: all 0.4s;
+}
+
+.touch-move-active .content, .touch-move-active .del {
+  transform: translateX(0);
+}

@@ -1,0 +1,12 @@
+
+<view class="container">
+  <v-button wx:if="{{!authorized}}" open-type="getUserInfo" bind:getUser="getUserInfo">
+    <image slot="img" class="avatar" src="{{avatar}}" />
+  </v-button>
+  <view wx:else>
+    <image class="avatar" src="{{userInfo.avatarUrl}}" />
+  </view>
+  <text class="nickName">{{userInfo.nickName}}</text>
+  <text wx:if="{{userInfo.isAdmin}}">会员显示</text>
+  <button wx:if="{{authorized}}" bindtap="loginOut">退出登录</button>
+</view>

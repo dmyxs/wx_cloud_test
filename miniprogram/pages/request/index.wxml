@@ -1,0 +1,5 @@
+<view class="container">
+  <block wx:for="{{users}}" wx:key="_id">
+    <view class="userName">{{item.userName}}</view>
+  </block>
+</view>

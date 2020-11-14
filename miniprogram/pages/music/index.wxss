@@ -1,0 +1,36 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.img{
+  width: 422rpx;
+  height: 422rpx;
+  margin-top: 60rpx;
+  border-radius: 50%;
+  border: 8rpx solid #ccc;
+}
+
+.playing{
+  width: 120rpx;
+  height: 120rpx;
+  position: relative;
+  bottom: 270rpx;
+}
+
+
+.ratation {
+  /* transform: rotate(360deg); */
+  animation: rotate 12s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}

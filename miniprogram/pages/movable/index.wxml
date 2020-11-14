@@ -1,0 +1,15 @@
+<view class="container">
+  <block wx:for="{{list}}" wx:key="index">
+    <movable-area class='movable-area'>
+      <movable-view class='movable-view' direction="horizontal" >
+        <view class="touch-item  {{item.isTouchMove ? 'touch-move-active' : ''}}" 
+          data-index="{{index}}" 
+          bindtouchstart="touchstart" 
+          bindtouchmove="touchmove">
+          <view class="content" data-id="{{item.groupId}}">{{index}}</view>
+          <view class="del" catchtap="del" data-idx="{{index}}">删除</view>
+        </view>
+      </movable-view>
+    </movable-area>
+  </block>
+</view>

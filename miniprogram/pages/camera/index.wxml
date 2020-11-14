@@ -1,0 +1,8 @@
+<!-- 摄像头 -->
+<button wx:if="{{!isOpenTakePhoto}}" type="primary" bindtap="openTakePhoto">开启摄像头</button>
+<button wx:else type="primary" bindtap="takePhoto">拍照</button>
+<button type="primary" bindtap="takePhoto">前置</button>
+<button type="primary" bindtap="takePhoto">后置</button>
+<camera wx:if="{{isOpenTakePhoto}}" mode='normal' device-position='front' flash='off' style="width:100%;height:300px;">
+</camera>
+<image src="{{photoSrc}}"></image>

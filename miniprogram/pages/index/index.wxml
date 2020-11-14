@@ -1,0 +1,31 @@
+<!-- <video class="video" id="myVideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" controls event-model="bubble">
+  <cover-image  class="img cover-img"  src="{{showImg ? img: imgActive}}" bindtap="onSwitch" />
+</video> -->
+<!-- <match-media min-width="100" max-width="600">
+  <view>博主虽然帅，但是只有你的设备宽度在100像素与600像素之间才能看见</view>
+</match-media>
+<match-media min-width="100" max-width="200">
+  <view>博主虽然帅，但是你看不见</view>
+</match-media>
+<match-media orientation="landscape">
+  <view>博主虽然帅，但是只有在横屏下才能看见</view>
+</match-media> -->
+
+
+
+
+
+<!-- <view class="box"></view> -->
+
+<!-- <icon type="cancel" size="50" />
+<progress percent="40" active stroke-width="3" />
+<button type="primary" loading="{{true}}" >按钮</button>
+<input type="text" confirm-type  placeholder="666" cursor-spacing="{{5}}"/> -->
+
+
+
+
+
+
+<!-- <button type="primary" bindtap="getLocation">地址</button>
+<button type="primary" bindtap="getsendCode">扫一扫</button> -->

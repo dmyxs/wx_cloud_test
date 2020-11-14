@@ -1,0 +1,118 @@
+{
+  "miniprogramRoot": "miniprogram/",
+  "cloudfunctionRoot": "cloudfunctions/",
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": true,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": false,
+    "useApiHook": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "enableEngineNative": false,
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true
+  },
+  "appid": "wxf671c1a4a3c31a2d",
+  "projectname": "cloud_test",
+  "libVersion": "2.14.0",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "movable",
+          "pathName": "pages/movable/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "books",
+          "pathName": "pages/books/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "payment",
+          "pathName": "pages/payment/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "swiper",
+          "pathName": "pages/swiper/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "scroll",
+          "pathName": "pages/scroll/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "camera",
+          "pathName": "pages/camera/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "map",
+          "pathName": "pages/map/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "me",
+          "pathName": "pages/me/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "music",
+          "pathName": "pages/music/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "request",
+          "pathName": "pages/request/index",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

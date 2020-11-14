@@ -1,0 +1,15 @@
+<button bindtap="onGetbook">获取图书</button>
+<view>
+  <block wx:for="{{books}}" wx:key="{{item.id}}">
+    <view>
+      <text>书籍名称:{{item.title}}</text>
+      <view>书籍作者:{{item.author}}</view>
+      <view>书籍价格:{{item.price}}</view>
+      <view>出版社:{{item.publisher}}</view>
+      <view>出版时间:{{item.pubdate}}</view>
+      <view>ISBN号:{{item.ISBN}}</view>
+      <view>书籍描述:{{item.description}}</view>
+      <image src="{{item.coverImg}}" mode="widthFix"></image>
+    </view>
+  </block>
+</view>

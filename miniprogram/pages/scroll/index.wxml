@@ -1,0 +1,7 @@
+<scroll-view scroll-x class="scroll-container">
+  <view class="scroll">
+    <block wx:for="{{8}}" wx:key="index">
+      <view class="banner-item">{{index}}</view>
+    </block>
+  </view>
+</scroll-view>
