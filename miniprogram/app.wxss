@@ -1,5 +1,7 @@
 /**app.wxss**/
-.container {
+/* @import '@vant/weapp/common/index.wxss'; */
+
+/* .container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -153,4 +155,6 @@ page {
   font-size: 24rpx;
   line-height: 36rpx;
   word-break: break-all;
-}
+} */
+
+

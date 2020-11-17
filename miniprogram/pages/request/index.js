@@ -16,16 +16,9 @@ Page({
    */
   onLoad: async function (options) {
     await user.getUsers().then(res => {
-      if(res.data.status === 200){
-        this.setData({
-          users:res.data.data
-        })
-      }else{
-        wx.showToast({
-          title: '网络请求错误',
-          icon:'none'
-        })
-      }
+      this.setData({
+        users:res.data
+      })
     })
     
   },

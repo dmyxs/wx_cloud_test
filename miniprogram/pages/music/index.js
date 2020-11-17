@@ -9,8 +9,8 @@ Page({
    */
   data: {
     playing: false,
-    play: '../../images/play_white.png',
-    stop:'../../images/stop_white.png',
+    play: '../../images/player@play.png',
+    stop:'../../images/player@pause.png',
     playArr:[]
   },
 

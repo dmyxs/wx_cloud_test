@@ -1,0 +1,58 @@
+.van-button--primary {
+  font-size: 28rpx;
+  color: red;
+  background-color: pink;
+  border: 1rpx solid pink;
+}
+
+.btn{
+  color: yellow;
+}
+
+.van-ellipsis{
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 24rpx;
+}
+
+.van-tabs__line {
+  width: 70rpx !important;
+  margin-left: -3rpx;
+  height: 5rpx !important;
+}
+
+
+/* .van-button--default{
+  color:red !important;
+} */
+
+
+.content{
+  text-indent: 2em;
+  margin: 10rpx 20rpx;
+}
+
+.footer {
+  position: relative;
+  top: 0;
+  left: 430rpx;
+}
+
+/* .van-button--danger{
+  margin-left: 15rpx;
+} */
+
+
+.van-card__title{
+  font-size: 28rpx;
+  margin-bottom: 10rpx;
+}
+
+.van-steps{
+  width: 650rpx;
+  margin: 0 auto;
+}
+
+.van-step__title:nth-child(1) view{
+  color:red
+}

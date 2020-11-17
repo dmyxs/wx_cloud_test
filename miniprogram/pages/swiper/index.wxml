@@ -9,7 +9,7 @@
 
 
 <!-- 轮播图1的布局 -->
-<view class="container">
+<!-- <view class="container">
   <view class="swiper-container" >
     <swiper class="swiper" autoplay="auto" interval="3000" duration="500" current="{{swiperCurrentIndex}}" bindchange="onSweiperChange">
       <block wx:for="{{swiper}}" wx:key="index">
@@ -34,27 +34,32 @@
       </block>
     </view>
   </view>
-</view>
+</view> -->
 
+<!-- 
+  750 - 650 = 100
+  100/2 -20 = 30
+  30 /2 = 15
+  autoplay="auto" 
+  
+      indicator-dots-active="#cccccc"
+-->
 
 <!-- 轮播图2的布局 -->
 <view class="container">
   <view class="swiper-container2">
-    <swiper class="swiper2" autoplay="auto" 
+    <swiper class="swiper2" 
       indicator-dots="true"
-      indicator-dots-active="red"
       interval="3000" 
       duration="500" 
       current="{{swiperCurrentIndex}}" 
-      previous-margin="100rpx"
-      next-margin="100rpx"
+      previous-margin="50rpx"
+      next-margin="50rpx"
       circular="ture"
       bindchange="onSweiperChange">
-      <block wx:for="{{swiper}}" wx:key="index">
-        <swiper-item>
+        <swiper-item class="swiper-item" wx:for="{{swiper}}" wx:key="index">
             <image class="img2 {{swiperCurrentIndex === index ? 'img-in' : 'img-out'}}" src="{{item.imgUrl}}" mode="scaleToFill" />
         </swiper-item>
-      </block>
     </swiper>
   </view>
 </view>

@@ -1,0 +1,2 @@
+<van-button class="btn-class" type="primary">按钮</van-button>
+<button class="btn-class">外部样式类</button>

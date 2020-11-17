@@ -19,6 +19,10 @@ Page({
     }
   },
 
+  onGetPhoneNumb(e){
+    console.log(e);
+  },
+
   _cloudLogin(nickName){
     wx.cloud.callFunction({
       name:'login',
@@ -58,6 +62,7 @@ Page({
    */
   onLoad: async function (options) {
     this.userAuthorized()
+    
     
     // const user = await wx.getStorageSync('userInfo') || {}
     // this.setData({

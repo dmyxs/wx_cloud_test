@@ -1,0 +1,11 @@
+var format = function(text){
+  if(!text) return //条件判断避免undefined
+
+  // 必须使用getRegExp来生成正则表达式
+  var reg = getRegExp('\\\\n','g')
+  return text.replace(reg,'\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;')
+}
+
+module.exports = {
+  format:format
+}

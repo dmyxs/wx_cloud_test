@@ -9,4 +9,8 @@
   <text class="nickName">{{userInfo.nickName}}</text>
   <text wx:if="{{userInfo.isAdmin}}">会员显示</text>
   <button wx:if="{{authorized}}" bindtap="loginOut">退出登录</button>
+  <open-data type="userAvatarUrl" />
+  <button bindgetphonenumber="onGetPhoneNumb" open-type="getPhoneNumber" plain>
+    获取号码
+  </button>
 </view>

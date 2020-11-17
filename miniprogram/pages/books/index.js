@@ -1,4 +1,6 @@
 // miniprogram/pages/books/index.js
+
+const db = wx.cloud.database()
 Page({
 
   /**
@@ -8,21 +10,25 @@ Page({
     books:[]
   },
 
-  onGetbook(){
-    wx.cloud.callFunction({
-      name:'books'
-    }).then(res => {
-      this.setData({
-        books:res.result.data
-      })
-    })
-  },
+  // onGetbook(){
+  //   wx.cloud.callFunction({
+  //     name:'books'
+  //   }).then(res => {
+  //     this.setData({
+  //       books:res.result.data
+  //     })
+  //   })
+  // },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-    console.log(this.data.books);
+  onLoad: async function (options) {
+    await db.collection('books').limit(1).get().then(res => {
+      this.setData({
+        books:res.data
+      })
+    })
   },
 
   /**

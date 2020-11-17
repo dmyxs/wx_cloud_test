@@ -10,7 +10,8 @@
     "pages/camera/index",
     "pages/music/index",
     "pages/map/index",
-    "pages/me/index"
+    "pages/me/index",
+    "pages/npm-ui/index"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -19,12 +20,37 @@
     "navigationBarTitleText": "测试",
     "navigationBarTextStyle": "black"
   },
+  "usingComponents": {
+    "van-tabs":"@vant/weapp/tabs/index",
+    "van-tab":"@vant/weapp/tab/index",
+    "van-button":"@vant/weapp/button/index",
+    "van-panel": "@vant/weapp/panel/index",
+    "van-card": "@vant/weapp/card/index",
+    "van-area": "@vant/weapp/area/index",
+    "van-submit-bar": "@vant/weapp/submit-bar/index",
+    "van-goods-action": "@vant/weapp/goods-action/index",
+    "van-goods-action-icon": "@vant/weapp/goods-action-icon/index",
+    "van-goods-action-button": "@vant/weapp/goods-action-button/index",
+    "van-sidebar": "@vant/weapp/sidebar/index",
+    "van-sidebar-item": "@vant/weapp/sidebar-item/index",
+    "van-grid": "@vant/weapp/grid/index",
+    "van-grid-item": "@vant/weapp/grid-item/index",
+    "van-tree-select": "@vant/weapp/tree-select/index",
+    "van-skeleton": "@vant/weapp/skeleton/index",
+    "van-notice-bar": "@vant/weapp/notice-bar/index",
+    "van-calendar": "@vant/weapp/calendar/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-picker": "@vant/weapp/picker/index",
+    "van-steps": "@vant/weapp/steps/index"
+  },
   "sitemapLocation": "sitemap.json",
-  "style": "v2",
   "permission": {
     "scope.userLocation": {
       "desc": "请确认位置授权，该位置将用于地图展示"
     }
   },
-  "requiredBackgroundModes": ["audio", "location"]
+  "requiredBackgroundModes": [
+    "audio",
+    "location"
+  ]
 }

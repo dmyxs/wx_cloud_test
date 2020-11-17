@@ -111,6 +111,11 @@
           "pathName": "pages/request/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "npm-ui",
+          "pathName": "pages/npm-ui/index",
+          "scene": null
         }
       ]
     }

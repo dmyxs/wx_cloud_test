@@ -1,0 +1,12 @@
+/* .van-button--primary {
+  font-size: 28rpx;
+  color: red;
+  background-color: pink;
+  border: 1rpx solid pink;
+  width: 200rpx;
+  border-radius: 15rpx;
+}
+
+.van-tabs__line{
+  height: 5rpx;
+} */

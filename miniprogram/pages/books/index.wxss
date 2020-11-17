@@ -1,1 +1,4 @@
-/* miniprogram/pages/books/index.wxss */
+.book-container{
+  display: flex;
+  flex-direction: column;
+}
