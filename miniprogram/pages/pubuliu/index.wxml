@@ -1,0 +1,28 @@
+<view class="view-fp-container">
+  <!--瀑布流-->
+  <view style="display:none">
+    <image wx:for="{{images}}" wx:key="_id" id="{{item._id}}" src="{{item.imgurl}}" bindload="onImageLoad" />
+  </view>
+  
+  <scroll-view scroll-y="true" style="height:{{scrollH}}px" 
+    bindscrolltolower="scrollLower"  
+    bindscroll="onScroll"
+    scroll-with-animation="true"
+    scroll-top="{{scrollTop}}"
+    >
+    <view style="width:100%">
+      <view class="img_item">
+        <view style="background-color:#fff;margin-bottom:10rpx;" wx:for="{{col1}}" wx:key="id">
+          <image src="{{item.imgurl}}" style="width:100%;height:{{item.height}}px" mode='aspectFill'></image>
+        </view>
+      </view>
+      <view class="img_item">
+        <view style="background-color:#fff;margin-bottom:10rpx;" wx:for="{{col2}}" wx:key="id">
+          <image src="{{item.imgurl}}" style="width:100%;height:{{item.height}}px" mode='aspectFill'></image>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+
+  <view wx:if="{{showGotoTop}}" class="goToTop" bindtap="onGoToTop">顶</view>
+</view>

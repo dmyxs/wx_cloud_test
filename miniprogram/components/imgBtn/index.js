@@ -7,7 +7,8 @@ Component({
     multipleSlots:true
   },
   properties: {
-    openType:String
+    openType:String,
+    color:String
   },
 
   /**

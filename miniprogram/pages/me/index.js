@@ -30,7 +30,8 @@ Page({
         nickName:nickName
       }
     }).then(res => {
-      const user = res.result.user[0]
+      console.log(res);
+      const user = res.result.userInfo
       wx.setStorageSync('userInfo', {
         ...user
       })
@@ -62,6 +63,9 @@ Page({
    */
   onLoad: async function (options) {
     this.userAuthorized()
+    wx.setNavigationBarTitle({
+      title: 'hello weapp',
+    })
     
     
     // const user = await wx.getStorageSync('userInfo') || {}

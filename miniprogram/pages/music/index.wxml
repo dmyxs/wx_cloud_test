@@ -1,5 +1,5 @@
 <view class="container">
-  <image  class="img {{playing ? 'ratation' : ''}}" src="../../images/lunbotu2.jpg" />
+  <image  class="img ratation {{playing ? '' : 'stopInLast'}}" src="../../images/lunbotu2.jpg" />
   <image  class="playing" src="{{playing ? stop : play}}" bindtap="onPaly"  />
   <!-- <text>音乐</text> -->
 </view>

@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="category-container">
+    <block wx:for="{{categoryArr}}" wx:key="index">
+      <view class="item {{categoryIndex == index ? 'active' : ''}}"  data-index="{{index}}" bindtap="onSwitch">{{item.title}}</view>
+    </block>
+  </view>
+  <view class="shopping-container">
+    <block wx:for="{{categoryArr}}" wx:key="index">
+      <view hidden="{{categoryIndex !== index}}">
+        <block wx:for="{{goods}}" wx:key="_id">
+          <view class="goods-item" data-id="{{item._id}}" bindtap="onSwitchDetail">
+            <image class="goods-img" src="{{item.imgurl[0]}}" mode="aspectFit" />
+            <view class="goods-des">
+              <view>名称：{{item.name}}</view>
+              <view>价格：￥{{item.price}}</view>
+            </view>
+          </view>
+        </block>
+      </view>
+    </block>
+  </view>
+</view>

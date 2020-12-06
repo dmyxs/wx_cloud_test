@@ -1,0 +1,33 @@
+page {
+  background-color: #f1f1f1;
+}
+
+.view-fp-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10rpx;
+}
+
+/* 瀑布流 */
+.img_item {
+  width: 48%;
+  margin: 1%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.goToTop{
+  width: 50rpx;
+  height: 50rpx;
+  position: fixed;
+  left: 650rpx;
+  top:1050rpx;
+  /* background-color:red; */
+  background-color: #fff;
+  border: 1rpx solid #777;
+  z-index: 999;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

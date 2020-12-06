@@ -37,6 +37,6 @@ Page({
 
 
   onLoad: function (options) {
-
-  }
+    this.login()
+  },
 })

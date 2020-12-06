@@ -20,6 +20,9 @@
   bottom: 270rpx;
 }
 
+.stopInLast {
+  animation-play-state:paused !important;
+}
 
 .ratation {
   /* transform: rotate(360deg); */

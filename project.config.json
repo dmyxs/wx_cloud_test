@@ -30,13 +30,15 @@
     "useIsolateContext": true,
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
     "packNpmManually": false,
     "packNpmRelationList": [],
-    "minifyWXSS": true
+    "minifyWXSS": true,
+    "bundle": false
   },
   "appid": "wxf671c1a4a3c31a2d",
   "projectname": "cloud_test",
-  "libVersion": "2.14.0",
+  "libVersion": "2.13.2",
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
   "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
@@ -115,6 +117,54 @@
         {
           "name": "npm-ui",
           "pathName": "pages/npm-ui/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "upload",
+          "pathName": "pages/upload/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "blog",
+          "pathName": "pages/blog/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "category",
+          "pathName": "pages/category/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "goods-detail",
+          "pathName": "pages/shopping-detail/index",
+          "query": "id:b1a52c595fbb64b6005174cd2d0aece1",
+          "scene": null
+        },
+        {
+          "name": "cart",
+          "pathName": "pages/shopping-cart/index",
+          "query": "id:b1a52c595fbb64b6005174cd2d0aece1",
+          "scene": null
+        },
+        {
+          "name": "pay",
+          "pathName": "pages/payment/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pubuliu",
+          "pathName": "pages/pubuliu/index",
           "scene": null
         }
       ]

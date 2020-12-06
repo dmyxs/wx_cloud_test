@@ -50,11 +50,12 @@
   <view class="swiper-container2">
     <swiper class="swiper2" 
       indicator-dots="true"
+      autoplay="true"
       interval="3000" 
       duration="500" 
       current="{{swiperCurrentIndex}}" 
-      previous-margin="50rpx"
-      next-margin="50rpx"
+      previous-margin="80rpx"
+      next-margin="80rpx"
       circular="ture"
       bindchange="onSweiperChange">
         <swiper-item class="swiper-item" wx:for="{{swiper}}" wx:key="index">

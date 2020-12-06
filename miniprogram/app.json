@@ -11,7 +11,15 @@
     "pages/music/index",
     "pages/map/index",
     "pages/me/index",
-    "pages/npm-ui/index"
+    "pages/npm-ui/index",
+    "pages/blog-edit/index",
+    "pages/blog-comment/blog-comment",
+    "pages/blog/index",
+    "pages/category/index",
+    "pages/shopping-cart/index",
+    "pages/shopping-detail/index",
+    "pages/order/index",
+    "pages/pubuliu/index"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -21,9 +29,9 @@
     "navigationBarTextStyle": "black"
   },
   "usingComponents": {
-    "van-tabs":"@vant/weapp/tabs/index",
-    "van-tab":"@vant/weapp/tab/index",
-    "van-button":"@vant/weapp/button/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-button": "@vant/weapp/button/index",
     "van-panel": "@vant/weapp/panel/index",
     "van-card": "@vant/weapp/card/index",
     "van-area": "@vant/weapp/area/index",

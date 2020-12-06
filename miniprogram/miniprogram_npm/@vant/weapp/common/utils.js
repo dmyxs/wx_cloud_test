@@ -1,35 +1,44 @@
-import { isNumber, isPlainObject } from './validator';
-export function isDef(value) {
+'use strict';
+Object.defineProperty(exports, '__esModule', { value: true });
+exports.getAllRect = exports.getRect = exports.pickExclude = exports.requestAnimationFrame = exports.addUnit = exports.getSystemInfoSync = exports.nextTick = exports.range = exports.isObj = exports.isDef = void 0;
+var validator_1 = require('./validator');
+function isDef(value) {
   return value !== undefined && value !== null;
 }
-export function isObj(x) {
-  const type = typeof x;
+exports.isDef = isDef;
+function isObj(x) {
+  var type = typeof x;
   return x !== null && (type === 'object' || type === 'function');
 }
-export function range(num, min, max) {
+exports.isObj = isObj;
+function range(num, min, max) {
   return Math.min(Math.max(num, min), max);
 }
-export function nextTick(fn) {
-  setTimeout(() => {
+exports.range = range;
+function nextTick(fn) {
+  setTimeout(function () {
     fn();
   }, 1000 / 30);
 }
-let systemInfo;
-export function getSystemInfoSync() {
+exports.nextTick = nextTick;
+var systemInfo;
+function getSystemInfoSync() {
   if (systemInfo == null) {
     systemInfo = wx.getSystemInfoSync();
   }
   return systemInfo;
 }
-export function addUnit(value) {
+exports.getSystemInfoSync = getSystemInfoSync;
+function addUnit(value) {
   if (!isDef(value)) {
     return undefined;
   }
   value = String(value);
-  return isNumber(value) ? `${value}px` : value;
+  return validator_1.isNumber(value) ? value + 'px' : value;
 }
-export function requestAnimationFrame(cb) {
-  const systemInfo = getSystemInfoSync();
+exports.addUnit = addUnit;
+function requestAnimationFrame(cb) {
+  var systemInfo = getSystemInfoSync();
   if (systemInfo.platform === 'devtools') {
     return nextTick(cb);
   }
@@ -37,36 +46,52 @@ export function requestAnimationFrame(cb) {
     .createSelectorQuery()
     .selectViewport()
     .boundingClientRect()
-    .exec(() => {
+    .exec(function () {
       cb();
     });
 }
-export function pickExclude(obj, keys) {
-  if (!isPlainObject(obj)) {
+exports.requestAnimationFrame = requestAnimationFrame;
+function pickExclude(obj, keys) {
+  if (!validator_1.isPlainObject(obj)) {
     return {};
   }
-  return Object.keys(obj).reduce((prev, key) => {
+  return Object.keys(obj).reduce(function (prev, key) {
     if (!keys.includes(key)) {
       prev[key] = obj[key];
     }
     return prev;
   }, {});
 }
-export function getRect(selector) {
-  return new Promise((resolve) => {
+exports.pickExclude = pickExclude;
+function getRect(selector) {
+  var _this = this;
+  return new Promise(function (resolve) {
     wx.createSelectorQuery()
-      .in(this)
+      .in(_this)
       .select(selector)
       .boundingClientRect()
-      .exec((rect = []) => resolve(rect[0]));
+      .exec(function (rect) {
+        if (rect === void 0) {
+          rect = [];
+        }
+        return resolve(rect[0]);
+      });
   });
 }
-export function getAllRect(selector) {
-  return new Promise((resolve) => {
+exports.getRect = getRect;
+function getAllRect(selector) {
+  var _this = this;
+  return new Promise(function (resolve) {
     wx.createSelectorQuery()
-      .in(this)
+      .in(_this)
       .selectAll(selector)
       .boundingClientRect()
-      .exec((rect = []) => resolve(rect[0]));
+      .exec(function (rect) {
+        if (rect === void 0) {
+          rect = [];
+        }
+        return resolve(rect[0]);
+      });
   });
 }
+exports.getAllRect = getAllRect;
